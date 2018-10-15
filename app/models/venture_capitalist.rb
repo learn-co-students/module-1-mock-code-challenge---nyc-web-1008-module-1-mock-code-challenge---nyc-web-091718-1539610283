@@ -53,11 +53,13 @@ class VentureCapitalist
 
   def invested(domain)
     count = 0
+    answer = ""
     my_funding_rounds = FundingRound.all.select do |fundinground|
-      fundinground.venture_capitalist == self &&       fundinground.startup.domain == domain
+      fundinground.venture_capitalist == self && fundinground.startup.domain == domain
       count = fundinground.investment
     end
-    count
+    answer = "$#{count.to_s}"
+    answer
   end
 
 end
