@@ -56,12 +56,10 @@ class VentureCapitalist
     my_funding_rounds = FundingRound.all.select do |fundinground|
       fundinground.venture_capitalist == self
     end
-    my_start_ups = my_funding_rounds.each do |fundinground|
-      if fundinground.startup.domain = domain
-      count += fundinground.investment ## not finished
-      end
+    select = my_funding_rounds.select do |object|
+      object
     end
-    count
+    select[0].investment
   end
 
 end
