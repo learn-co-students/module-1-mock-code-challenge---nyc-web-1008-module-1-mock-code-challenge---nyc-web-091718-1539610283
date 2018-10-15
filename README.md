@@ -48,14 +48,14 @@ We've provided you with a console that you can use to test your code. To enter a
 
 #### Build out the following methods on the `VentureCapitalist` class
 
-- `VentureCapitalist#name`
+<!-- - `VentureCapitalist#name`
   - returns a **string** that is the venture capitalist's name
 - `VentureCapitalist#tres_commas`
   - returns a **boolean** stating whether or not the venture capitalist is in the Trés Commas club
 - `VentureCapitalist.all`
   - returns an array of all venture capitalists
 - `VentureCapitalist.tres_commas_club`
-  - returns an array of all venture capitalists in the Trés Commas club
+  - returns an array of all venture capitalists in the Trés Commas club -->
 
 ---
 
