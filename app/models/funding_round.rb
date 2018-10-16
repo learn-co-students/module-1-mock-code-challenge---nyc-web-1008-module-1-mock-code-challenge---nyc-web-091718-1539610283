@@ -7,17 +7,26 @@ class FundingRound
   @@all=[]
 
   def initialize(startup,venture_capitalist,type,investment)
-    @startup = startup
-    @venture_capitalist = venture_capitalist
-    @type = type
-    @investment = investment
-    @@all << self
+    if investment >= 0
+      @startup = startup
+      @venture_capitalist = venture_capitalist
+      @type = type
+      @investment = investment
+    else
+      nil
+    end
+      @@all << self
+    end
+
+
+  def investment=(investment)
+    @investment = investment if investment >= 0
   end
 
   #CLASS METHODS
 
   def self.all
-    @@all
+    @@alls
   end
 
 end # End of FundingRound Class
